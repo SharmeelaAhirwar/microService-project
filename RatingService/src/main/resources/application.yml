@@ -1,0 +1,49 @@
+
+server:
+   port: 8082
+
+
+
+
+spring:
+    datasource:
+        password:  Sh@rmeel@123
+        url: jdbc:mysql://localhost:3306/MicroService_course
+        username: root
+
+
+    jpa:
+        hibernate:  
+            ddl-auto: update
+        show-sql: true
+        properties:
+           hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    application:
+     name: rating-service
+
+eureka:
+   instance:
+     prefer-ip-address: true
+     client:
+       register-with-eureka: true
+       fetch-registery: true
+       service-url:
+          defaultzone: http://localhost:8761/eureka
+
+#okta config
+
+
+
+
+
+
+okta:
+  oauth2:
+    issuer: https://dev-49736887.okta.com/oauth2/default
+    audience: api://default
+
+
+
+
+

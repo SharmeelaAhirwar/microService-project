@@ -1,0 +1,19 @@
+server:
+  port: 8084
+
+spring:
+   application:
+        name: CONFIG-SERVER
+   profile:
+     active: composite
+   cloud:
+    config:
+      server:
+        git:
+           uri: https://github.com/sharmeela12/microservice-tutorial-config
+             
+        clone-on-start: true
+   
+  
+ 
+
